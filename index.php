@@ -1,0 +1,545 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="lib/w3.css">
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>
+	Joe Blog
+</title>
+<style>
+hr{
+	border : 1px solid grey;
+	width : 60%;
+	margin : auto
+}
+#bg-img1{
+	background : url("pics/Puskin.jpg");
+	width : 100%;
+	height : 42%;
+	background-size : cover;
+}
+#bg-img2{
+	background : url("pics/mountains.jpg");
+	width : 100%;
+	height : 42%;
+	background-size : cover;
+	display : none
+}
+#bg-img3{
+	background : url("pics/bgimg.jpg");
+	width : 100%;
+	height : 42%;
+	background-size : cover;
+	display : none
+}
+#bg-img4{
+	background : url("pics/sealions.jpg");
+	width : 100%;
+	height : 42%;
+	background-size : cover;
+	display : none
+}
+#bg-img5{
+	background : url("pics/flowers.jpg");
+	width : 100%;
+	height : 42%;
+	background-size : cover;
+	display : none
+}
+.rowCards{
+	float : left;
+	width : 32.45%
+}
+#opaque{
+	opacity : .4;
+}
+#body2{
+	width : 61%;
+	height : 100%;
+	margin-right : 2%;
+	float : right
+}
+#collapseButton{
+	visibility : hidden
+}
+@media screen and (min-width : 763px){
+	#body1{
+		display : block;
+	}
+	#close{
+		display : none
+	}
+}
+@media screen and (max-width : 763px){
+	#body1{
+		display : none
+	}
+	#collapseButton{
+		visibility : visible
+	}
+	.rightNav{
+		padding : 0px 10px 0px 10px;
+		color : lightgrey;
+		opacity : .8;
+		cursor : pointer
+	}
+	#body2{
+		width : 98%;
+		float : left;
+		margin-left : 1%;
+		margin-right : 1%;
+	}
+}
+.linkCont{
+	background-color : #ffcc00;
+	width : 100%;
+	height : 50px
+}
+@media screen and (max-width : 436px){
+	#overflow{
+		display : none
+	}
+}
+@media screen and (max-width : 441px){
+	#header{
+		font-size : 140%;
+	}
+}
+#positioning{
+	 margin-top : 35%;
+}
+@media screen and (max-height : 443px){
+	#positioning{
+		margin-top : 10%;
+	}
+}
+.navigation{
+	float : left;
+	font-family : sans serif;
+	font-size : 140%;
+	color : white;
+	padding : 7px 10px 5px 10px;
+}
+@media screen and (max-width : 1297px){
+	.navigation{
+		float : left;
+		font-family : sans serif;
+		font-size : 125%;
+		color : white;
+		padding : 5px 10px;
+}
+}
+@media screen and (max-width : 1190px){
+	.navigation{
+		float : left;
+		font-family : sans serif;
+		font-size : 110%;
+		color : white;
+		padding : 10px 10px 5px 10px;
+}
+}
+@media screen and (max-width : 1081px){
+	.navigation{
+		float : left;
+		font-family : sans serif;
+		font-size : 100%;
+		color : white;
+		padding : 13px 10px 5px 10px;
+}
+}
+@media screen and (max-width : 1006px){
+	.navigation{
+		float : left;
+		font-family : sans serif;
+		font-size : 100%;
+		color : white;
+		padding : 13px 10px 0px 10px;
+}
+	.linkCont{
+		background-color : #ffcc00;
+		width : 100%;
+		height : 80px
+	}
+}
+@media screen and (max-width : 760px){
+	.navigation{
+		float : left;
+		font-family : sans serif;
+		font-size : 100%;
+		color : white;
+		padding : 13px 10px 0px 10px;
+}
+	.linkCont{
+		background-color : #ffcc00;
+		width : 100%;
+		height : 50px
+	}
+}
+@media screen and (max-width : 734px){
+	.navigation{
+		float : left;
+		font-family : sans serif;
+		font-size : 100%;
+		color : white;
+		padding : 13px 10px 0px 10px;
+}
+	.linkCont{
+		background-color : #ffcc00;
+		width : 100%;
+		height : 70px
+	}
+}
+</style>
+</head>
+<body>
+	<div id='body1' class='w3-animate-left w3-display-container' style='width : 35%; height : 100%; margin-right : 2%; position : fixed; background-color : #ffcc00'>
+	 <div onclick="w3_close()" class="w3-closenav w3-xxlarge w3-hover-red w3-padding w3-display-topright" id='close'>&times;</div>
+	    <div id='positioning' style='width : 90%; background-color : black; height : auto; margin-left : 10%;'>
+		<div style='padding-top : 10%; padding-bottom : 3%'>
+			<h1 style='color : white; font-weight : bold; font-family : sans serif; font-size : 600%' class='w3-center'>
+				45
+			</h1>
+			<hr class='w3-center w3-text-grey'>
+			<p style=' color : white' class='w3-center w3-xlarge'>
+			    Designs for Blog Post Slider/Carousel <br>Layout
+			</p>
+		</div>
+		</div>
+	</div>
+	<div id='body2' class='w3-animate-right' style=''>
+		<h2 id='header' style='font-family : sans serif'>
+			<span class="w3-xlarge rightNav w3-round w3-teal w3-btn w3-padding-small" onclick="w3_open()" id='collapseButton'>&#9776;</span> 
+			JOZZY BLOG
+		</h2>
+		<div class="linkCont" style=''>
+		<div class='' style='margin-left : 7%; margin-right : 4%'>
+			<div class="navigation">
+				<a href="pages/news.php" class='mainLink' style='text-decoration : none;'>
+					News
+				</a>
+			</div>
+			<div class="navigation">
+				<a href="" class='mainLink' style='text-decoration : none;'>
+					Music
+				</a>
+			</div>
+			<div class="navigation">
+				<a href="" class='mainLink' style='text-decoration : none;'>
+					Videos
+				</a>
+			</div>
+			<div class="navigation">
+				<a href="" class='mainLink' style='text-decoration : none;'>
+					Entertainment
+				</a>
+			</div>
+			<div class="navigation">
+				<a href="" class='mainLink' style='text-decoration : none;'>
+					Sport
+				</a>
+			</div>
+			<div class="navigation">
+				<a class='mainLink' href="" style='text-decoration : none;'>
+					Education
+				</a>
+			</div>
+			<div class="navigation">
+				<a class='mainLink' id='lastLink' href="" style='text-decoration : none;'>
+					Face of the Week
+				</a>
+			</div>
+		</div>
+		</div>
+	<div id='bg-img1' class='w3-display-container w3-animate-top'>
+		<div id='opaque' style='position : absolute;background-color : black; width : 50%; height : 100%'>
+			
+		</div>
+		<div style='position : absolute; width : 50%'>
+		<div class='w3-container'>
+				<div class='w3-margin-top w3-padding-small w3-btn w3-teal w3-round w3-text-white' style='opacity : 3'>
+					Learn more
+				</div>
+				<p class='w3-text-white w3-margin-top' style='font-weight : bold; font-size : 80%'>
+					Once again, some random text to lorem lorem lorem lorem ipsum tincidunt ipsum lipsum.
+				</p>
+				<p class='w3-text-white' style='opacity : .5; font-weight : bold; font-size : 60%'>
+					Once again, ipsum lipsum.
+				</p>
+				<p id='overflow' class='w3-text-white' style='font-weight : bold; font-size : 75%'>
+					Once again, some random text some random text to lorem lorem lorem lorem ipsum tincidunt ipsum lipsum.
+				</p>
+			</div>
+		</div>
+		<div style='background : black; opacity : .6' class='w3-display-bottomright'>
+		</div>
+	</div>
+	<div id='bg-img2' class='w3-display-container w3-animate-zoom'>
+		<div id='opaque' style='position : absolute;background-color : black; width : 50%; height : 100%'>
+			
+		</div>
+		<div style='position : absolute; width : 50%'>
+		<div class='w3-container'>
+				<div class='w3-margin-top w3-padding-small w3-btn w3-teal w3-round w3-text-white' style='opacity : 3'>
+					Learn more
+				</div>
+				<p class='w3-text-white w3-margin-top' style='font-weight : bold; font-size : 80%'>
+					Once again, some random text to lorem lorem lorem lorem ipsum tincidunt ipsum lipsum.
+				</p>
+				<p class='w3-text-white' style='opacity : .5; font-weight : bold; font-size : 60%'>
+					Once again, ipsum lipsum.
+				</p>
+				<p id='overflow' class='w3-text-white' style='font-weight : bold; font-size : 75%'>
+					Once again, some random text some random text to lorem lorem lorem lorem ipsum tincidunt ipsum lipsum.
+				</p>
+			</div>
+		</div>
+		<div style='background : black; opacity : .6' class='w3-display-bottomright'>
+		</div>
+	</div>
+	<div id='bg-img3' class='w3-display-container w3-animate-zoom'>
+		<div id='opaque' style='position : absolute;background-color : black; width : 50%; height : 100%'>
+			
+		</div>
+		<div style='position : absolute; width : 50%'>
+		<div class='w3-container'>
+				<div class='w3-margin-top w3-padding-small w3-btn w3-teal w3-round w3-text-white' style='opacity : 3'>
+					Learn more
+				</div>
+				<p class='w3-text-white w3-margin-top' style='font-weight : bold; font-size : 80%'>
+					Once again, some random text to lorem lorem lorem lorem ipsum tincidunt ipsum lipsum.
+				</p>
+				<p class='w3-text-white' style='opacity : .5; font-weight : bold; font-size : 60%'>
+					Once again, ipsum lipsum.
+				</p>
+				<p id='overflow' class='w3-text-white' style='font-weight : bold; font-size : 75%'>
+					Once again, some random text some random text to lorem lorem lorem lorem ipsum tincidunt ipsum lipsum.
+				</p>
+			</div>
+		</div>
+		<div style='background : black; opacity : .6' class='w3-display-bottomright'>
+		</div>
+	</div>
+	<div id='bg-img4' class='w3-display-container w3-animate-zoom'>
+		<div id='opaque' style='position : absolute;background-color : black; width : 50%; height : 100%'>
+			
+		</div>
+		<div style='position : absolute; width : 50%'>
+		<div class='w3-container'>
+				<div class='w3-margin-top w3-padding-small w3-btn w3-teal w3-round w3-text-white' style='opacity : 3'>
+					Learn more
+				</div>
+				<p class='w3-text-white w3-margin-top' style='font-weight : bold; font-size : 80%'>
+					Once again, some random text to lorem lorem lorem lorem ipsum tincidunt ipsum lipsum.
+				</p>
+				<p class='w3-text-white' style='opacity : .5; font-weight : bold; font-size : 60%'>
+					Once again, ipsum lipsum.
+				</p>
+				<p id='overflow' class='w3-text-white' style='font-weight : bold; font-size : 75%'>
+					Once again, some random text some random text to lorem lorem lorem lorem ipsum tincidunt ipsum lipsum.
+				</p>
+			</div>
+		</div>
+		<div style='background : black; opacity : .6' class='w3-display-bottomright'>
+		</div>
+		
+	</div>
+	<div id='bg-img5' class='w3-display-container w3-animate-zoom'>
+		<div id='opaque' style='position : absolute;background-color : black; width : 50%; height : 100%'>
+			
+		</div>
+		<div style='position : absolute; width : 50%'>
+		<div class='w3-container'>
+				<div class='w3-margin-top w3-padding-small w3-btn w3-teal w3-round w3-text-white' style='opacity : 3'>
+					Learn more
+				</div>
+				<p class='w3-text-white w3-margin-top' style='font-weight : bold; font-size : 80%'>
+					Once again, some random text to lorem lorem lorem lorem ipsum tincidunt ipsum lipsum.
+				</p>
+				<p class='w3-text-white' style='opacity : .5; font-weight : bold; font-size : 60%'>
+					Once again, ipsum lipsum.
+				</p>
+				<p id='overflow' class='w3-text-white' style='font-weight : bold; font-size : 75%'>
+					Once again, some random text some random text to lorem lorem lorem lorem ipsum tincidunt ipsum lipsum.
+				</p>
+			</div>
+		</div>
+		<div style='background : black; opacity : .6' class='w3-display-bottomright'>
+		</div>
+	</div>
+	
+	<br>
+	<div class='w3-animate-right'>
+		<div class='rowCards' style='margin-right : 1.3%'>
+			<div>
+				<img src='pics/flowers.jpg' style='width : 100%; height : 150px;'>
+			</div>
+			
+			<div class='w3-margin-top w3-btn w3-teal w3-round w3-text-white w3-padding-small' style=''>
+				Read More
+			</div>
+			<p style='font-weight : bold; font-family : sans serif'>
+				Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+			</p>
+			<p style='opacity : .5; margin-top : -4%; font-family : sans serif'>
+				Just some random text
+			</p>
+			<p style='font-family : sans serif; margin-top : -4%'>
+				some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+			</p>
+			<div class='w3-white w3-border w3-btn w3-border-grey w3-round w3-padding-small w3-text-grey' style='margin-top : -3%; margin-bottom : 5%'>
+				Learn more
+			</div>
+		</div>
+		<div class='rowCards' style='margin-right : 1.3%'>
+			<div>
+				<img src='pics/oceans.jpg' style='width : 100%; height : 150px;'>
+			</div>
+			
+			<div class='w3-margin-top w3-btn w3-teal w3-round w3-text-white w3-padding-small' style=''>
+				Read More
+			</div>
+			<p style='font-weight : bold; font-family : sans serif'>
+				Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+			</p>
+			<p style='opacity : .5; margin-top : -4%; font-family : sans serif'>
+				Just some random text
+			</p>
+			<p style='font-family : sans serif; margin-top : -4%'>
+				some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+			</p>
+			<div class='w3-white w3-border w3-btn w3-border-grey w3-round w3-padding-small w3-text-grey' style='margin-top : -3%; margin-bottom : 5%'>
+				Learn more
+			</div>
+		</div>
+		<div class='rowCards'>
+			<div>
+				<img src='pics/mountains2.jpg' style='width : 100%; height : 150px;'>
+			</div>
+			
+			<div class='w3-margin-top w3-btn w3-teal w3-round w3-text-white w3-padding-small' style=''>
+				Read More
+			</div>
+			<p style='font-weight : bold; font-family : sans serif'>
+				Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.
+			</p>
+			<p style='opacity : .5; margin-top : -4%; font-family : sans serif'>
+				Just some random text
+			</p>
+			<p style='font-family : sans serif; margin-top : -4%'>
+				some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+			</p>
+			<div class='w3-white w3-border w3-btn w3-border-grey w3-round w3-padding-small w3-text-grey' style='margin-top : -3%; margin-bottom : 5%'>
+				Learn more
+			</div>
+		</div>
+		</div>
+		<br>
+		<br>
+		<div style='float : left; width : 100%'>
+		<br>
+		<footer style='margin-top : -1%;auto; background-color : #ffcc00; width : 100%'>
+	    <br>
+		<h2 class='w3-center w3-text-white w3-margin-left' style='font-size : 90%'><a href='pages/uploadPosts.php' class='w3-hover-text-black' style='text-decoration : none'>Admin</a></h2>
+		<h2 class='w3-center w3-text-white w3-margin-left' style='font-size : 90%'>&copy 2018 JOZZY BLOG.</h2>
+		<h2 class='w3-center w3-text-white w3-margin-left' style='font-size : 90%'>Beautifully crafted by Adufe </h2>
+		<h3 class='w3-center w3-text-white w3-margin-left' style='font-size : 90%'>Contact : (+234)8035553294</h3>
+	    <div class='w3-center w3-margin-right'>
+		    <span class='w3-margin-left fa fa-instagram w3-text-red w3-hover-opacity' style='cursor : pointer; font-size : 200%'><a href='instagram@dmaygstudios.com'></a></span>
+		    <span class='w3-margin-left fa fa-facebook w3-text-blue w3-hover-opacity' style='cursor : pointer; font-size : 200%'><a href='facebook@dmaygstudios.com'></a></span>
+		 </div>
+	</footer>
+	</div>
+	</div>
+	
+<script>
+//alert(window.innerWidth)
+function w3_open() {
+		document.getElementById("body1").style.display = "block";
+		document.getElementById("body1").style.width = "45%";
+		document.getElementById("body2").style.marginLeft = "47%";
+    }
+	function w3_close() {
+    document.getElementById("body1").style.display = "none";
+	document.getElementById("body2").style.marginLeft = "0%";
+}
+
+
+
+/*function forward(){
+	document.getElementById("bg-img2").style.display = "block";
+	document.getElementById("bg-img1").style.display = "none";
+	document.getElementById("bg-img3").style.display = "none";
+}*/
+/*window.addEventListener('load', next);
+	function nexts(a){
+	setTimeout(forward, a);
+	a = a +4000;
+	next1(a);
+}
+function next(){
+	var a = 4000;
+	setTimeout(forward, a);
+	a = a +4000;
+	next1(a);
+}
+function forward1(){
+	document.getElementById("bg-img3").style.display = "block";
+	document.getElementById("bg-img1").style.display = "none";
+	document.getElementById("bg-img2").style.display = "none";
+}
+
+	function next1(a){
+		setTimeout(forward1, a);
+		a = a + 4000;
+		normalAc(a)
+		
+	}
+function normal(){
+	document.getElementById("bg-img1").style.display = "block";
+	document.getElementById("bg-img2").style.display = "none";
+	document.getElementById("bg-img3").style.display = "none";
+	
+}
+	function normalAc(a){
+	setTimeout(normal, a);
+	a = a + 4000;
+	nexts(a)
+}*/
+var imageArray = ['bg-img1', 'bg-img2', 'bg-img3', 'bg-img4', 'bg-img5'];
+	var imageId = 1;
+	function change(){
+		document.getElementById(imageArray[imageId]).style.display='block';
+		
+		for (i = 0; i < imageId; i++) {
+    document.getElementById(imageArray[i]).style.display='none';
+}
+
+		imageId++;
+		if(imageId > imageArray.length-1){
+			imageId = 0;
+			
+		}
+		if(imageId == 1){
+			document.getElementById(imageArray[imageArray.length-1]).style.display='none';
+			
+		}
+		
+	}
+	setInterval(change, 4000);
+	/* developer/ibm.com/africa*/
+/*function backward(){
+	document.getElementById("bg-img1").style.display = "block";
+	document.getElementById("bg-img2").style.display = "none";
+	document.getElementById("bg-img3").style.display = "none";
+}
+function backward1(){
+	document.getElementById("bg-img2").style.display = "block";
+	document.getElementById("bg-img1").style.display = "none";
+	document.getElementById("bg-img3").style.display = "none";
+}*/
+//Problem Faced
+//https://developer.mozilla.org/docs/Web/JavaScript/Reference/Errors/Too_much_recursion?utm_source=mozilla&utm_medium=firefox-console-errors&utm_campaign=default
+</script>
+</body>
+</html>

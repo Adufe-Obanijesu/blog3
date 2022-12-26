@@ -1,0 +1,20 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+<body>
+
+	<img src='pics/mountains.jpg' id='mainImage'>
+<button onclick='change()'>Change</button>
+<script>
+	var main = document.getElementById('mainImage');
+	var imageArray = ['pics/sealions.jpg', 'pics/mountains2.jpg', 'pics/flowers.jpg', 'pics/bgimg.jpg'];
+	var imageId = 1;
+	
+	function change(){
+		imageId.setAttribute('src', imageArray[imageId])
+		imageId++;
+	}
+
+</script>
+</body>
+</html>
